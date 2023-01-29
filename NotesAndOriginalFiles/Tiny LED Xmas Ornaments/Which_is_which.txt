@@ -1,0 +1,10 @@
+16111191:Tree
+16111193:Cap
+16111194:Stocking
+16111195:Reindeer
+16111196:Bauble
+16111197:Sleigh
+16111198:Star
+16111199:Cane
+
+16111192:Icicle, uses 16111194 stocking firmware (same pattern)

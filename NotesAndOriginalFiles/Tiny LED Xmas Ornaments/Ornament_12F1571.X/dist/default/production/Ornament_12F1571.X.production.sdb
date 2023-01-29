@@ -1,0 +1,56 @@
+[p LITE_MODE AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 12LF1571 ]
+[d frameptr 6 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"8 Z:\Monthly Downloads\2020\Nov20\Tiny LED Xmas Ornaments\Software\Ornament_12F1571.X\io.c
+[v _ioinit ioinit `(v  1 e 1 0 ]
+"13
+[v _setLED setLED `(v  1 e 1 0 ]
+"40 Z:\Monthly Downloads\2020\Nov20\Tiny LED Xmas Ornaments\Software\Ornament_12F1571.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"902 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic12lf1571.h
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+[s S26 . 1 `uc 1 SWDTEN 1 0 :1:0 
+`uc 1 WDTPS0 1 0 :1:1 
+`uc 1 WDTPS1 1 0 :1:2 
+`uc 1 WDTPS2 1 0 :1:3 
+`uc 1 WDTPS3 1 0 :1:4 
+`uc 1 WDTPS4 1 0 :1:5 
+]
+"1212
+[s S33 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 WDTPS 1 0 :5:1 
+]
+[u S36 . 1 `S26 1 . 1 0 `S33 1 . 1 0 ]
+[v _WDTCONbits WDTCONbits `VES36  1 e 1 @151 ]
+"1688
+[v _LATA LATA `VEuc  1 e 1 @268 ]
+"2196
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"11 Z:\Monthly Downloads\2020\Nov20\Tiny LED Xmas Ornaments\Software\Ornament_12F1571.X\main.c
+[v _pattern pattern `DC[20]uc  1 e 20 0 ]
+"40
+[v _main main `(v  1 e 1 0 ]
+{
+"41
+[v main@i i `uc  1 a 1 4 ]
+"62
+} 0
+"13 Z:\Monthly Downloads\2020\Nov20\Tiny LED Xmas Ornaments\Software\Ornament_12F1571.X\io.c
+[v _setLED setLED `(v  1 e 1 0 ]
+{
+[v setLED@n n `uc  1 a 1 wreg ]
+[v setLED@n n `uc  1 a 1 wreg ]
+[v setLED@n n `uc  1 a 1 2 ]
+"30
+} 0
+"8
+[v _ioinit ioinit `(v  1 e 1 0 ]
+{
+"11
+} 0

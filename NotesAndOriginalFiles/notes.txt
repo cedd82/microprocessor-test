@@ -1,0 +1,122 @@
+
+SC5579 kit
+
+tiny LED icicle parts
+1 whiteboard 
+1 
+	PIC12F1571-I/SN (/1572-I/SN) or
+	PIC16F15213-I/SN (/15214-I/SN) 8-bit microcontroller, 
+	SOIC-8 programmed with the appropriate version of 16111194. HEC (IC1)
+
+12 SMD LEDs, M3216/1206 or SMA size, any color
+
+1 SMD coin cell holder
+1 CR2032 v3 coin cell 
+1 10k SMD resistor, M3216/1206
+4 100 SMD resistor, M3216/1206
+1 5-PIN right-angle header (CON1; optional; for power/programming)
+1 2-pin right-angle header (CON2; power)
+1 
+
+
+PIC12F1572-I/SN
+
+siliconchip.au/Article/14636
+
+in mplab when creating new project
+
+- family:
+32-bit MCUs (PIC32)
+-device
+PIC32MX360F512L
+
+
+hostId for c32x compiler
+b42e993ce202
+
+christmasOrnament2 (1).jpg transcription:
+- 12 leds, 8 pin microcontroller
+- siliconchip.au/Shop/20/5579
+- if you have a blank PIC12F1571 or  PIC12F1572 microcontroller, yuou can use a pickit 3, pickit 4 or snap.
+- leds might get stuck on if the proammer is still connected, 
+	one pin is shared between the programmer and the led 
+Circut diagram:
+IC1 - PIC16F15214 - 8 pins
+- pins:
+	1 - vdd (top)
+	2 - RA5
+	3 - RA4/AN3
+	4 - RA3/MCLR
+	5 - RA2/AN2
+	6 - RA1/PGEC
+	7 - RA0/PGED
+	8 - ground
+- CON1 ICSP - the pins that connect to the pickit 4
+- pins:
+	1 - connects to pin 4 on IC1
+	2 - has a resistor that connects to pin 4 and maybe 1 on IC1
+	3 - ground, probably negative
+	4 - connects to pin 7 on IC1
+		positive 
+	5 - connects to pin 6 maybe, and the array of LEDS, thats prob the shared programming pin
+
+end transcription
+
+ChristmasOrnament1.jpg transcription:
+- the firmware for hte stocking simply flashes the LEDs in order from top to bottom. the
+icicle therefore reuses the existing code/HEX file from the stocking. 
+end transcription
+
+- for more info refer
+siliconchip.au/Article/12086
+on the back of the circuit: 16111192 tiny icicle
+
+
+
+16111192:Icicle, uses 16111194 stocking firmware (same pattern)
+
+16111194:Stocking
+
+Ornament_12F1571.X
+- 12F1571
+Software for 12F1572 variants
+- 12F1572
+	Ornament_12F1572.X
+Software for 16F15213 variants
+- 16F15213
+	Ornament_16F15213.X
+Software for 16F15214 Variants
+- i think its this one
+- 16F15214
+	Ornament_16F15214.X
+
+xc8 install notes:
+C:\Program Files\Microchip\xc8\v2.40
+"C:\Program Files (x86)\Microchip\xc8\v2.00\bin\xclm" -status
+hostId
+b42e993ce202
+
+Ornament_16F15214.X loaded in mplab
+- device PIC16F15214
+
+
+target device ID (0x30e3) is an invalid device id please check your connections to the target device
+
+it founnd this:
+16F15213
+PIC16F15213
+
+Connecting to MPLAB PICkit 4
+
+Currently loaded versions:
+Application version...........00.08.54
+Boot version..................01.00.00
+Script version................00.05.35
+Script build number...........86fedc5c2e
+Tool pack version ............1.13.1519
+Target voltage detected
+Target device PIC16F15213 found.
+Device Revision Id  = 0x2006
+Device Id = 0x30e3
+
+Device Revision Id  = 0x2006
