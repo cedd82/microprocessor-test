@@ -1,0 +1,58 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F15214 ]
+[d frameptr 6 ]
+"10 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"4 C:\code\microchip\MPLABXProjects\Ornament_16F15214.X\io.c
+[v _ioinit ioinit `(v  1 e 1 0 ]
+"9
+[v _setLED setLED `(v  1 e 1 0 ]
+"33 C:\code\microchip\MPLABXProjects\Ornament_16F15214.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"496 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\include\proc\pic16f15214.h
+[v _TRISA TRISA `VEuc  1 e 1 @18 ]
+"546
+[v _LATA LATA `VEuc  1 e 1 @24 ]
+[s S22 . 1 `uc 1 SEN 1 0 :1:0 
+`uc 1 PS 1 0 :5:1 
+`uc 1 . 1 0 :1:6 
+`uc 1 CS 1 0 :1:7 
+]
+"4985
+[s S27 . 1 `uc 1 WDTSEN 1 0 :1:0 
+`uc 1 WDTPS 1 0 :5:1 
+`uc 1 . 1 0 :1:6 
+`uc 1 WDTCS 1 0 :1:7 
+]
+[s S32 . 1 `uc 1 SWDTEN 1 0 :1:0 
+]
+[u S34 . 1 `S22 1 . 1 0 `S27 1 . 1 0 `S32 1 . 1 0 ]
+[v _WDTCONbits WDTCONbits `VES34  1 e 1 @2060 ]
+"7016
+[v _ANSELA ANSELA `VEuc  1 e 1 @7992 ]
+"5 C:\code\microchip\MPLABXProjects\Ornament_16F15214.X\main.c
+[v _pattern pattern `DC[20]uc  1 e 20 0 ]
+"33
+[v _main main `(v  1 e 1 0 ]
+{
+"34
+[v main@i i `uc  1 a 1 4 ]
+"53
+} 0
+"9 C:\code\microchip\MPLABXProjects\Ornament_16F15214.X\io.c
+[v _setLED setLED `(v  1 e 1 0 ]
+{
+[v setLED@n n `uc  1 a 1 wreg ]
+[v setLED@n n `uc  1 a 1 wreg ]
+[v setLED@n n `uc  1 a 1 2 ]
+"27
+} 0
+"4
+[v _ioinit ioinit `(v  1 e 1 0 ]
+{
+"7
+} 0
